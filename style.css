@@ -18,7 +18,7 @@ nav a {
 }
 
 .hero {
-    background: url('../assets/images/school.jpg') no-repeat center/cover;
+    background: white;
     height: 80vh;
     display: flex;
     align-items: center;
