@@ -110,6 +110,32 @@ nav a:hover {
         flex-direction: column;
     }
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #2563eb;
+}
 .footer {
     background: #1e3a8a;
     color: white;
