@@ -1,11 +1,6 @@
 body {
     background-color: lightgray;
 }
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +41,7 @@ nav a:hover {
 }
 
 .hero {
-    background: RED;
+    background: lightblue;
     height: 75vh;
     display: flex;
     align-items: center;
