@@ -46,7 +46,7 @@ nav a:hover {
 }
 
 .hero {
-    background: blueviolet;
+    background: RED;
     height: 75vh;
     display: flex;
     align-items: center;
