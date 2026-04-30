@@ -41,7 +41,7 @@ nav a:hover {
 }
 
 .hero {
-    background: lightblue;
+    background: rgb(56, 186, 230);
     height: 75vh;
     display: flex;
     align-items: center;
