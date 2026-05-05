@@ -117,35 +117,25 @@ nav a:hover {
         flex-direction: column;
     }
 }
-.section{
- text-align: center;
-}
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    max-width: 200px;
-    margin: auto;
+    align-items: center;
+    gap: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
+    width: 250px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 .contact-form button {
-    background: #1e3a8a;
+    background-color: #2d4a9d;
     color: white;
-    border: none;
     padding: 10px;
+    border: none;
     cursor: pointer;
-    width: 100%;
-}
-
-.contact-form button:hover {
-    background: #2563eb;
 }
 .footer {
     background: #1e3a8a;
