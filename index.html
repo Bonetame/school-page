@@ -2,35 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMYS School</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-    <h1 class="logo">BMYS School</h1>
+<header>
+    <h1>BMYS School</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
-    <div class="hero-text">
-        <h2>THE FEAR OF THE LORD IS THE BEGINING OF THE KNOWLEDGE <br>PROVERB1:7</h2>
-        <P>Empowering Students for the Future</P>
-        <p>Quality education, innovation, and growth.</p>
-        <button>Learn More</button>
-    </div>
+    <h2>THE FEAR OF THE LORD IS THE BEGINING OF THE KNOWLEDGE<BR> <PROVERB1:7</h2>
+    <p>Empowering students through quality education and innovation.</p>
 </section>
 
-<section class="card">
-    <h2>About Our School</h2>
-    <p>
-        BMYS School is dedicated to providing high-quality education and shaping
-        students into responsible and successful individuals.
-    </p>
+<section id="about">
+    <h2>About Us</h2>
+    <p>BMYS School is dedicated to academic excellence.</p>
 
     <h3>Mission</h3>
     <p>To deliver excellent education with strong values.</p>
@@ -38,23 +32,28 @@
     <h3>Vision</h3>
     <p>To become a leading educational institution.</p>
 </section>
-<section class="contact">
+
+<section id="contact">
     <h2>Contact Us</h2>
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button>Send Message</button>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
     </form>
+
+    <p id="responseMessage"></p>
 </section>
 
-
-<footer class="footer">
+<footer>
     <p>Email: info@bmyschool.com</p>
     <p>Phone: +251 9xx xxx xxx</p>
     <p>© 2026 BMYS School</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
+

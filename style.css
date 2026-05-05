@@ -1,145 +1,145 @@
-body {
-    background-color: lightgray;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: linear-gradient(to right, #1e3a8a, #2563eb);
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #4da6ff;
     color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 nav a {
     color: white;
-    margin-left: 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #facc15;
-    transform: scale(1.1);
+    opacity: 0.7;
 }
 
-.hero {
-    background: linear-gradient(to right, #1e3a8a, #2563eb);
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
     text-align: center;
-    color: white;
-    padding: 20px;
 }
 
-.hero-text h1 {
-    font-size: 18px;
-    opacity: 0.8;
-}
-
+/* Hero */
 .hero {
-    background: rgb(56, 186, 230);
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(to right, #4da6ff, #80c1ff);
     color: white;
-    text-align: center;
-    position: relative;
+    border-radius: 0 0 20px 20px;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Cards (About section) */
+#about {
+    background: #f9fbff;
+}
+
+#about h3 {
+    margin-top: 20px;
+    color: #4da6ff;
+}
+
+/* Contact */
+#contact {
+    background: #ffffff;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input, textarea {
     width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
+    max-width: 350px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
 }
 
-.hero-text {
-    animation: fadeIn 1s ease-in;
+input:focus, textarea:focus {
+    border-color: #4da6ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(77,166,255,0.4);
 }
+
+/* Button */
+button {
+    background: #4da6ff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #3399ff;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* Animation (fade in) */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+section:nth-child(2) { animation-delay: 0.2s; }
+section:nth-child(3) { animation-delay: 0.4s; }
+section:nth-child(4) { animation-delay: 0.6s; }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
     to {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.card {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.6;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    flex: 1;
-    min-width: 250px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-text h2 {
-        font-size: 28px;
-    }
-
-    nav a {
-        margin-left: 10px;
-    }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-    }
-}
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 250px;
-    padding: 10px;
-}
-
-.contact-form button {
-    background-color: #2d4a9d;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-.footer {
-    background: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 20px;
 }
